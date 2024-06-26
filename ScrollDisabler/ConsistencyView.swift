@@ -12,15 +12,26 @@ struct ConsistencyView: View {
         ZStack {
             MeshBackground()
             VStack {
-                Spacer()
-                Text("Do you want to be consistent in things that matter in your life ?")
-                    .font(.headline)
-                    .foregroundStyle(.secondary)
+//                Spacer()
+//                Text("Do you want to be consistent in things that matter in your life ?")
+//                    .font(.headline)
+//                    .foregroundStyle(.secondary)
+                HStack {
+                    Text("""
+                    Do you want to be 
+                    consistent,
+                    in things that
+                    matter in your life ?
+                    """)
+                    Spacer()
+                }
+                .padding(.leading)
                 Spacer()
                 NavigationLink("Yes") { WelcomeView() }
                 Spacer()
             }
-            .modifier(BigButtonAligned())
+            .padding(.vertical, 80)
+            .modifier(BigButton())
         }
         .navigationBarBackButtonHidden()
         .ignoresSafeArea()
@@ -29,29 +40,4 @@ struct ConsistencyView: View {
 
 #Preview {
     ConsistencyView()
-}
-
-struct MeshBackground: View {
-    var body: some View {
-        MeshGradient(
-            width: 3,
-            height: 3,
-            points: [
-                [0.5, 0.0], [1.5, 0.0], [0.5, 0.0],
-                [0.0, 0.0], [0.0, 1.0], [1.0, 0.5],
-                [0.0, 0.5], [0.5, 1.0], [0.0, 1.0]
-            ],
-            colors: [
-                .black, .black, .black,
-                .blue, .green, .green,
-                .black, .black, .blue
-            ]
-        )
-        .phaseAnimator([false, true, false]) { wwdc24, chromaRotate in
-            wwdc24
-                .hueRotation(.degrees(chromaRotate ? 360 : 0))
-        } animation: { chromaRotate in
-            .smooth(duration: 8)
-        }
-    }
 }

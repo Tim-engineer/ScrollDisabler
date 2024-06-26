@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DisableEnterView: View {
+struct InitialView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 60) {
@@ -33,5 +33,5 @@ struct DisableEnterView: View {
 }
 
 #Preview {
-    DisableEnterView()
+    InitialView()
 }

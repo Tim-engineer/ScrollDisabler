@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		D1F8C12F2C2C12A80088E23A /* ScrollDisablerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C12E2C2C12A80088E23A /* ScrollDisablerApp.swift */; };
-		D1F8C1312C2C12A80088E23A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C1302C2C12A80088E23A /* ContentView.swift */; };
+		D1F8C1312C2C12A80088E23A /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C1302C2C12A80088E23A /* AppView.swift */; };
 		D1F8C1332C2C12A90088E23A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F8C1322C2C12A90088E23A /* Assets.xcassets */; };
 		D1F8C1362C2C12A90088E23A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1F8C1352C2C12A90088E23A /* Preview Assets.xcassets */; };
 		D1F8C13D2C2C13CC0088E23A /* ConsistencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C13C2C2C13CC0088E23A /* ConsistencyView.swift */; };
 		D1F8C1412C2C16600088E23A /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C1402C2C16600088E23A /* WelcomeView.swift */; };
-		D1F8C1432C2C3A6D0088E23A /* DisableEnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C1422C2C3A6D0088E23A /* DisableEnterView.swift */; };
+		D1F8C1432C2C3A6D0088E23A /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C1422C2C3A6D0088E23A /* InitialView.swift */; };
+		D1F8C1492C2C69DA0088E23A /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C1482C2C69DA0088E23A /* BlockView.swift */; };
+		D1F8C14B2C2C6A180088E23A /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F8C14A2C2C6A180088E23A /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1F8C12B2C2C12A80088E23A /* ScrollDisabler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollDisabler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F8C12E2C2C12A80088E23A /* ScrollDisablerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollDisablerApp.swift; sourceTree = "<group>"; };
-		D1F8C1302C2C12A80088E23A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1F8C1302C2C12A80088E23A /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		D1F8C1322C2C12A90088E23A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1F8C1352C2C12A90088E23A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1F8C13C2C2C13CC0088E23A /* ConsistencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsistencyView.swift; sourceTree = "<group>"; };
 		D1F8C1402C2C16600088E23A /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		D1F8C1422C2C3A6D0088E23A /* DisableEnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableEnterView.swift; sourceTree = "<group>"; };
+		D1F8C1422C2C3A6D0088E23A /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		D1F8C1482C2C69DA0088E23A /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		D1F8C14A2C2C6A180088E23A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -35,10 +39,18 @@
 			);
 			target = D1F8C12A2C2C12A80088E23A /* ScrollDisabler */;
 		};
+		D1F8C14F2C2C6D7B0088E23A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				MeshBackground.swift,
+			);
+			target = D1F8C12A2C2C12A80088E23A /* ScrollDisabler */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D1F8C1442C2C3DC50088E23A /* Modifiers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D1F8C1472C2C3DF40088E23A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Modifiers; sourceTree = "<group>"; };
+		D1F8C14C2C2C6D640088E23A /* MeshBackground */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (D1F8C14F2C2C6D7B0088E23A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = MeshBackground; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +84,13 @@
 			isa = PBXGroup;
 			children = (
 				D1F8C12E2C2C12A80088E23A /* ScrollDisablerApp.swift */,
-				D1F8C1302C2C12A80088E23A /* ContentView.swift */,
-				D1F8C1422C2C3A6D0088E23A /* DisableEnterView.swift */,
+				D1F8C1302C2C12A80088E23A /* AppView.swift */,
+				D1F8C1482C2C69DA0088E23A /* BlockView.swift */,
+				D1F8C14A2C2C6A180088E23A /* AccountView.swift */,
+				D1F8C1422C2C3A6D0088E23A /* InitialView.swift */,
 				D1F8C13C2C2C13CC0088E23A /* ConsistencyView.swift */,
 				D1F8C1402C2C16600088E23A /* WelcomeView.swift */,
+				D1F8C14C2C2C6D640088E23A /* MeshBackground */,
 				D1F8C1442C2C3DC50088E23A /* Modifiers */,
 				D1F8C1322C2C12A90088E23A /* Assets.xcassets */,
 				D1F8C1342C2C12A90088E23A /* Preview Content */,
@@ -161,10 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1F8C1432C2C3A6D0088E23A /* DisableEnterView.swift in Sources */,
+				D1F8C1432C2C3A6D0088E23A /* InitialView.swift in Sources */,
 				D1F8C1412C2C16600088E23A /* WelcomeView.swift in Sources */,
 				D1F8C13D2C2C13CC0088E23A /* ConsistencyView.swift in Sources */,
-				D1F8C1312C2C12A80088E23A /* ContentView.swift in Sources */,
+				D1F8C14B2C2C6A180088E23A /* AccountView.swift in Sources */,
+				D1F8C1492C2C69DA0088E23A /* BlockView.swift in Sources */,
+				D1F8C1312C2C12A80088E23A /* AppView.swift in Sources */,
 				D1F8C12F2C2C12A80088E23A /* ScrollDisablerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

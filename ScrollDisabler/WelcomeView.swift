@@ -10,15 +10,17 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         ZStack {
-            MeshBackground3()
+            MeshBackground2()
             VStack(spacing: 120) {
+//                Text("You are in the right place then...")
+//                    .font(.headline)
                 HStack {
                     Text("You are in the right place then...")
                     Spacer()
                 }
                 .padding(.leading)
                 Spacer()
-                NavigationLink("Welcome") { ContentView() }
+                NavigationLink("Welcome") { AppView() }
                 Spacer()
             }
             .padding(.vertical, 80)
@@ -33,30 +35,3 @@ struct WelcomeView: View {
 #Preview {
     WelcomeView()
 }
-
-struct MeshBackground3: View {
-    var body: some View {
-        MeshGradient(
-            width: 3,
-            height: 3,
-            points: [
-                [0.5, 0.0], [1.5, 0.0], [0.5, 0.0],
-                [1.0, 0.0], [0.0, 1.0], [1.0, 0.5],
-                [0.0, 0.5], [0.5, 1.0], [0.0, 1.0]
-            ],
-            colors: [
-                .black, .black, .black,
-                .blue, .green, .green,
-                .black, .black, .blue
-            ]
-        )
-        .phaseAnimator([false, true, false]) { wwdc24, chromaRotate in
-            wwdc24
-                .hueRotation(.degrees(chromaRotate ? 360 : 0))
-        } animation: { chromaRotate in
-            .smooth(duration: 8)
-        }
-    }
-}
-
-
