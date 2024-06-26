@@ -11,27 +11,27 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             MeshBackground3()
-            VStack {
-                Button { } label: {
-                    Text("Then you are mostly welcomed to our app")
+            VStack(spacing: 120) {
+                HStack {
+                    Text("You are in the right place then...")
+                    Spacer()
                 }
+                .padding(.leading)
+                Spacer()
+                NavigationLink("Welcome") { ContentView() }
+                Spacer()
             }
-            .modifier(BigButtonModifier())
-            .buttonStyle(.bordered)
-            .tint(.primary)
+            .padding(.vertical, 80)
+            .modifier(BigButton())
         }
-        .navigationTitle("Welcome")
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitleDisplayMode(.large)
         .navigationBarBackButtonHidden()
         .ignoresSafeArea()
-        
     }
 }
 
 #Preview {
-    NavigationStack {
-        WelcomeView()
-    }
+    WelcomeView()
 }
 
 struct MeshBackground3: View {

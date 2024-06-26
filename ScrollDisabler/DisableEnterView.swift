@@ -11,21 +11,23 @@ struct DisableEnterView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 60) {
-                Button("""
-                       WELCOME
-                       TO
-                       THE
-                       """) { }
+                VStack(spacing: 20){
+                    Text("WELCOME")
+                    Text("TO")
+                    Text("THE")
+                }
+                .foregroundStyle(LinearGradient(colors: [.gray, .orange.opacity(0.2)], startPoint: .topLeading, endPoint: .bottomTrailing))
+                Text("""
+                     SCROLL
+                     KILLER
+                    """)
+                    .foregroundStyle(LinearGradient(colors: [.red, .orange], startPoint: .topLeading, endPoint: .bottomTrailing))
+                    .font(.system(size: 60))
                 
-                Button("SCROLLDISABLER") { }
-                    .tint(.accentColor)
-                    .padding(.bottom, 60)
-                
-                Button("Disable all the distractions with one button") { }
-                    .font(.title3)
-                NavigationLink("Disable") { ConsistencyView() }
+                NavigationLink("CONTINUE") { ConsistencyView() }
+                    .tint(.secondary)
             }
-            .modifier(BigButtonModifier())
+            .modifier(BigButtonAligned())
         }
     }
 }
